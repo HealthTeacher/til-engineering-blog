@@ -42,13 +42,14 @@ config :phoenix, :stacktrace_depth, 20
 # Configure your database
 config :tilex, Tilex.Repo,
   adapter: Ecto.Adapters.Postgres,
-  url: System.get_env("DATABASE_URL"),
-  database: "tilex_dev",
+  database: "til_development",
   hostname: "localhost",
+  username: System.get_env("DB_USERNAME"),
+  password: System.get_env("DB_PASSWORD"),
   pool_size: 10
 
 config :tilex, :page_size, 50
 config :tilex, :cors_origin, "http://localhost:3000"
-config :tilex, :default_twitter_handle, "hashrocket"
+config :tilex, :default_twitter_handle, "gonoodle"
 
 config :tilex, :request_tracking, true
