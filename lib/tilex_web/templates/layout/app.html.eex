@@ -64,21 +64,8 @@
     <% end %>
 
     <header class="site_head <%= if System.get_env("BANNER"), do: "has-banner" %>">
-      <%= if (System.get_env("BANNER")) do %>
-        <div class="banner">
-          <div class="message">
-            Hashrocket is hosting a <strong>Ruby</strong>, <strong>Rails</strong>, and <strong>React</strong> conference. Buy your tickets for <a href="https://www.ancientcityruby.com/">ACR</a> today!
-          </div>
-        </div>
-      <% end %>
       <div>
         <h1><%= link("Today I Learned", to: post_path(@conn, :index)) %></h1>
-        <h2>
-          <a href="https://hashrocket.com" class="hr">A Hashrocket project</a>
-          <span>
-            <a href="https://twitter.com/<%= Application.get_env(:tilex, :default_twitter_handle)%>" class="twitter">Follow on Twitter</a>
-          </span>
-        </h2>
       </div>
     </header>
 
