@@ -28,18 +28,19 @@ defmodule TilexWeb.Endpoint do
     gzip: true,
     headers: [{"access-control-allow-origin", "*"}],
     only: ~w(
-      assets
       apple-touch-icon-120x120.png
-      apple-touch-icon.png
       apple-touch-icon-precomposed.png
+      apple-touch-icon.png
+      assets
       css
       favicon.ico
       favicon.png
       fonts
-      hashrocket-logo.png
+      gonoodle-logo.png
       images
       js
       robots.txt
+      site_icon.png
     )
   )
 

@@ -55,7 +55,7 @@ defmodule TilexWeb.LayoutView do
   end
 
   def twitter_title(_post) do
-    "Today I Learned: a Hashrocket Project"
+    "Today I Learned"
   end
 
   def twitter_description(%Tilex.Post{} = post) do
@@ -74,7 +74,7 @@ defmodule TilexWeb.LayoutView do
 
   def twitter_description(_post) do
     """
-    TIL is an open-source project by Hashrocket that exists to catalogue the sharing & accumulation of knowledge as it happens day-to-day. Posts have a 200-word limit, and posting is open to any Rocketeer as well as select friends of the team. We hope you enjoy learning along with us.
+    A site to catalog the interesting things learned by the GoNoodle engineers.
     """
   end
 
