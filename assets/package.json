@@ -1,6 +1,6 @@
 {
-  "repository": "https://github.com/hashrocket/tilex",
-  "description": "TIL is an open-source project by Hashrocket that exists to catalogue the sharing & accumulation of knowledge as it happens day-to-day.",
+  "repository": "https://github.com:HealthTeacher/til-engineering-blog",
+  "description": "A site to catalog the interesting things learned by the GoNoodle engineers.",
   "license": "MIT",
   "scripts": {
     "deploy": "webpack --mode production",

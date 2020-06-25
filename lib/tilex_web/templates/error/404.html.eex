@@ -111,7 +111,7 @@
       header.site_head h2 a.hr {
         color: #ae1f23;
         background: left 55% no-repeat
-          url('http://localhost:4000/images/hashrocket-logo.png');
+          url('/images/gonoodle-logo.png');
         background-size: 1.8rem auto;
       }
       header.site_head h2 a.twitter {
@@ -481,12 +481,6 @@
     <header class="site_head">
       <div>
         <h1><a href="/">Today I Learned</a></h1>
-        <h2>
-          <a href="https://hashrocket.com" class="hr">A Hashrocket project</a>
-          <span>
-            <a href="https://twitter.com/hashrocket" class="twitter">Follow on Twitter</a>
-          </span>
-        </h2>
       </div>
     </header>
     <main>

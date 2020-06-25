@@ -6,7 +6,7 @@
       <%= page_title(assigns) %> - Today I Learned
     </title>
 
-    <% description = "TIL is an open-source project by Hashrocket that exists to catalogue the sharing & accumulation of knowledge as it happens day-to-day." %>
+    <% description = "A site to catalog the interesting things learned by the GoNoodle engineers." %>
     <% image = twitter_image_url(assigns[:post]) %>
 
     <meta itemprop="name" content="Today I Learned">
@@ -23,7 +23,7 @@
     <meta property="og:description" content="<%= description %>">
     <meta property="og:title" content="Today I Learned">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://til.hashrocket.com">
+    <meta property="og:url" content="https://til.gonoodle.com">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:creator" content="@<%= Application.get_env(:tilex, :default_twitter_handle)%>">
@@ -35,6 +35,7 @@
     <link href='//fonts.googleapis.com/css?family=Raleway:700,900&display=swap' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Lora:400,700italic,700,400italic&display=swap' rel='stylesheet' type='text/css'>
     <link rel="alternate feed" type="application/rss+xml" title="Today I Learned" href="<%= feed_path(@conn, :index) %>">
+    <link rel="shortcut icon" type="image/png" href="<%= static_url(@conn, "/images/site_icon.png") %>"/>
 
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css">
 
