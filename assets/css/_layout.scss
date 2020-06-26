@@ -118,12 +118,11 @@ header.site_head {
   @include mobile {
     z-index: 100;
     background: #fff;
-    text-align: right;
+    text-align: center;
 
     @include box_outline;
 
     padding-right: 1rem;
-    padding-bottom: 0;
 
     h2 {
       position: static;
@@ -406,7 +405,7 @@ main {
 
 
   @include mobile {
-    margin-top: 40vw;
+    margin-top: 15vw;
   }
 }
 
