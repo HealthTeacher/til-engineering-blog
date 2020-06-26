@@ -11,7 +11,11 @@ html {
 body {
   -webkit-text-size-adjust: none;
   -webkit-font-smoothing: antialiased;
-  background: $light;
+  background: #fff url('/images/bg-purple-waves-light.svg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   color: $dark;
   font-family: $primary-typeface;
   font-size: 1.6em;

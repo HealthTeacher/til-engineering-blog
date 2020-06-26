@@ -14,8 +14,8 @@
 }
 
 @mixin box-outline {
-  background: transparentize(#fff, 0.1);
-  border: 0.2rem solid transparentize(#fff, 0.1);
+  background-color: #fff;
+  border: 0.2rem solid transparentize(#000, 0.9);
 }
 
 @mixin header-text {
