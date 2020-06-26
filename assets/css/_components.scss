@@ -105,18 +105,19 @@ nav.pagination {
   section {
     flex: 0 1 auto;
     box-sizing: border-box;
-    width: 60%;
+    max-width: 75em;
+    width: 90%;
 
     @include box-outline;
+
     @include mobile {
-      max-width: none;
-      min-width: 0;
+      width: 100%;
     }
   }
 
   .post__content {
     overflow: auto;
-    padding: 4vw;
+    padding: 2vw;
 
     h1:first-of-type {
       a {
@@ -128,6 +129,10 @@ nav.pagination {
           color: $red;
         }
       }
+    }
+
+    @include mobile {
+      padding: 4vw;
     }
   }
 

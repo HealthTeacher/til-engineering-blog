@@ -82,6 +82,13 @@
       <%= render @view_module, @view_template, assigns %>
     </main>
 
+    <footer>
+      <p>
+        Today I Learned is an open-source project by <a href="https://hashrocket.com">Hashrocket</a>.
+        Check out the <a href="https://github.com/hashrocket/tilex">source code</a> to make your own!
+      </p>
+    </footer>
+
     <%= render "site_nav.html", conn: @conn %>
 
     <script>
