@@ -4,10 +4,11 @@ defmodule Tilex.Notifications.Notifiers.Twitter do
   use Tilex.Notifications.Notifier
 
   def handle_post_created(post, developer, channel, url) do
-    "#{post.title} #{url} via @#{Developer.twitter_handle(developer)} #til ##{
-      channel.twitter_hashtag
-    }"
-    |> send_tweet
+    # "#{post.title} #{url} via @#{Developer.twitter_handle(developer)} #til ##{
+    #   channel.twitter_hashtag
+    # }"
+    # |> send_tweet
+    :ok
   end
 
   def handle_post_liked(_post, _dev, _url) do
